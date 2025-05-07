@@ -1,4 +1,6 @@
 import React from "react";
+import Her from "../../Components/HybridEmbeddedRouter/Her";
+import { Button } from "antd";
 
 
 
@@ -12,6 +14,9 @@ const MainPage26 = (props) => {
         <div>
             <div className={'mimi-layout-container'}>
                 <div>
+                    <Her href={'home/gome/pluto-25'}>
+                        <Button >GOVNO</Button>
+                    </Her>
                     <br />
                     <br />
                     <br />
