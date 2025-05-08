@@ -14,8 +14,12 @@ const MainPage26 = (props) => {
         <div>
             <div className={'mimi-layout-container'}>
                 <div>
-                    <Her href={'home/gome/pluto-25'}>
+                    <Her href={'home'}>
                         <Button >GOVNO</Button>
+                    </Her>
+
+                    <Her href={'beerhouse/hello/wolf&tguser=33'}>
+                        <Button >PILSENER</Button>
                     </Her>
                     <br />
                     <br />

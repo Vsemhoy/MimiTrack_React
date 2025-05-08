@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { StateContext, StateProvider } from "../../../Components/Definitions/Global/ComStateProvider25/ComStateProvider25";
 
 const ClaimPage = (props) => {
@@ -6,7 +6,7 @@ const ClaimPage = (props) => {
     const {userData} = props;
 
 
-    
+
     return (
         <div>
             ClaimPage

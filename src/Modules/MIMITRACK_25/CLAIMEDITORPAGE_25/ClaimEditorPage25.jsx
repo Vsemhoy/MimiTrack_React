@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { StateContext, StateProvider } from "../../../Components/Definitions/Global/ComStateProvider25/ComStateProvider25";
-import { useContext } from "react";
 
-const ClaimListPage = (props) => {
+const ClaimEditorPage = (props) => {
     const {state, setState} = useContext(StateContext);
     const {userData} = props;
 
@@ -10,9 +9,9 @@ const ClaimListPage = (props) => {
     
     return (
         <div>
-            ClaimListPage
+            ClaimEditorPage
         </div>
     )
 };
 
-export default ClaimListPage;
+export default ClaimEditorPage;
