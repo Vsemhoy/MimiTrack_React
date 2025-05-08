@@ -1,3 +1,58 @@
+.mi-container {
+    display: block;
+    width: 100%;
+}
+.mi-pa-3 {
+    padding: 3px;
+}
+.mi-pa-4 {
+    padding: 4px;
+}
+.mi-pa-5 {
+    padding: 5px;
+}
+.mi-pa-6 {
+    padding: 6px;
+}
+.mi-pa-9 {
+    padding: 9px;
+}
+.mi-pa-12 {
+    padding: 12px;
+}
+
+
+.mi-flex {
+    display: flex;
+}
+.mi-flex-space {
+    display: flex;
+    align-content: space-between;
+}
+
+
+
+.mi-ska-mw-1400 {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width: 1400px) {
+    .mi-ska-mw-1400 {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 .mimi-layout-container {
     width: 100%;
     display: grid;

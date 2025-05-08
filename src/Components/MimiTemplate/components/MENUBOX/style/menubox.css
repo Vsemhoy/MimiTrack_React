@@ -1,0 +1,9 @@
+.mi-block-menu {
+    display: grid;
+    grid-template-columns: 40px auto 300px;
+    border: 1px solid var(--row-divider-color);
+}
+
+.mi-block-menu > div {
+    border-right: 1px solid var(--row-divider-color);
+}

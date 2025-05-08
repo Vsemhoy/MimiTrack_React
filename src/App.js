@@ -24,6 +24,8 @@ import TaskEditorPage from './Modules/MIMITRACK_25/TASKEDITORPAGE_25/TaskEditorP
 import ReleaseEditorPage from './Modules/MIMITRACK_25/RELEASEEDITOR_25/ReleaseEditorPage25';
 import ReleasePage from './Modules/MIMITRACK_25/RELEASEPAGE_25/ReleasePage25';
 
+import './Assets/style/theme.css';
+import './Assets/style/layout.css';
 
 function App() {
   const { state, setState } = useContext(StateContext);
@@ -80,6 +82,9 @@ function App() {
     </div>
 
       {state.location === '' && <MainPage26 />}
+      {state.location === 'home' && <MainPage26 />}
+
+      {state.location === 'mtrack' && <ReleaseListPage />}
 
       {state.location === 'claims' && <ClaimListPage />}
       {state.location === 'claimpage' && <ClaimPage />}

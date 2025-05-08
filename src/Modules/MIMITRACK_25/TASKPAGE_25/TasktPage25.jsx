@@ -8,7 +8,8 @@ const TaskPage = (props) => {
 
     
     return (
-        <div>
+        <div className={"mi-ska-mw-1400"}>
+            <BreadCrumbBox></BreadCrumbBox>
             TaskPage
         </div>
     )
