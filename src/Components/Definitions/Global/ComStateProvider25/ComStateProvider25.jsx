@@ -4,7 +4,7 @@ export const StateContext = createContext();
 
 export function StateProvider({ children }) {
   const [state, setState] = useState({
-    text: '',
+    // text: '',
     target_user_id: 0,
     target_claim_id: 0,
     target_task_id: 0,
@@ -21,7 +21,7 @@ export function StateProvider({ children }) {
   });
 
   // Геттеры для каждого свойства
-  const getText = useCallback(() => state.text, [state.text]);
+//   const getText = useCallback(() => state.text, [state.text]);
   const getLocation = useCallback(() => state.location, [state.location]);
   const getTargetUserId = useCallback(() => state.target_user_id, [state.target_user_id]);
   // ... остальные геттеры по аналогии
@@ -49,7 +49,7 @@ export function StateProvider({ children }) {
   // Функция для сброса состояния
   const resetState = useCallback(() => {
     setState({
-      text: '',
+    //   text: '',
       target_user_id: 0,
       target_claim_id: 0,
       target_task_id: 0,
@@ -70,7 +70,7 @@ export function StateProvider({ children }) {
     <StateContext.Provider value={{
       state,
       setState,
-      getText,
+    //   getText,
       setText,
       getTargetUserId,
       setTargetUserId,

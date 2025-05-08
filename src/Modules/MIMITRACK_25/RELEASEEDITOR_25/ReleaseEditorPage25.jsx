@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { StateContext, StateProvider } from "../../../Components/Definitions/Global/ComStateProvider25/ComStateProvider25";
+import MenuBox from "../../../Components/MimiTemplate/components/MENUBOX/MenuBox";
 import BreadCrumbBox from "../../../Components/MimiTemplate/components/BREADCRUMBS/BreadCrumbBox";
 
 const ReleaseEditorPage = (props) => {

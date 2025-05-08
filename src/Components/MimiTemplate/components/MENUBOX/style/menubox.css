@@ -4,6 +4,9 @@
     border: 1px solid var(--row-divider-color);
 }
 
-.mi-block-menu > div {
+.mi-block-menu > div:not(*:last-child) {
     border-right: 1px solid var(--row-divider-color);
+}
+.mi-block-menu .mi-active {
+    background-color: var(--drawer-gray-section-color);
 }

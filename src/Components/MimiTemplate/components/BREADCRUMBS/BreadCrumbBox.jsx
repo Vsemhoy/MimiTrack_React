@@ -7,8 +7,8 @@ const BreadCrumbBox = (props) => {
   const { state, setState } = useContext(StateContext);
 
   return (
-    <div className={'mi-container mi-bg-base'}>
-      <div className={'mi-flex-space mi-pa-9'}>
+    <div className={'mi-container'}>
+      <div className={'mi-flex-space mi-pa-3'}>
         <div className={'mi-flex mi-bread-crumbs'}>
           <BreadCrumber />
         </div>

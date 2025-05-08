@@ -21,14 +21,32 @@
     padding: 12px;
 }
 
+.mi-mt-12 {
+    margin-top: 12px;
+}
+.mi-mt-6 {
+    margin-top: 6px;
+}
 
 .mi-flex {
     display: flex;
 }
 .mi-flex-space {
     display: flex;
-    align-content: space-between;
+    justify-content: space-between;
+    align-content: center;
 }
+
+.mi-br-3 {
+    border-radius: 3px;
+}
+.mi-br-6 {
+    border-radius: 5px;
+}
+.mi-br-9 {
+    border-radius: 9px;
+}
+
 
 
 
@@ -44,6 +62,12 @@
     }
 }
 
+
+.mi-layout-leftsidebar {
+    display: grid;
+    grid-template-columns: 320px auto;
+    grid-gap: 12px;
+}
 
 
 

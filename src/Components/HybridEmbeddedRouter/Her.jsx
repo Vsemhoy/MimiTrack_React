@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ParseRoute } from './RouteParser';
 import { useContext, useEffect } from 'react';
 import { StateContext } from '../Definitions/Global/ComStateProvider25/ComStateProvider25';
@@ -20,13 +20,24 @@ HER реализует гибридный подход к навигации, к
 
 const Her = ({ href, target = '_self',
      tab = null,
-     
+     location = null,
      children, onClick }) => {
+
     const { state, setState } = useContext(StateContext);
+
+    const [satLocation, setSatLocation] = useState('');
+    useEffect(()=>{
+        setSatLocation(location);
+    }, [location])
+
     const handleClick = (e) => {
     // Если есть внешний обработчик, вызываем его
     if (onClick) {
       onClick(e);
+    }
+
+    if (e.button === 2){
+        return;
     }
 
     // Определяем тип клика
@@ -64,6 +75,7 @@ const Her = ({ href, target = '_self',
       target={target}
       onClick={handleClick}
       onAuxClick={handleClick} // Обработчик средней кнопки мыши
+      className={`${satLocation === state.location ? "mi-active" : ""}`}
     >
       {children}
     </a>
