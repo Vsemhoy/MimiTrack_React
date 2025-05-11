@@ -7,7 +7,7 @@ import './Assets/style/theme.css';
 import './Assets/style/layout.css';
 import MainPage26 from './Modules/MAIN_PAGE_26/MainPage26';
 
-import { StateContext, StateProvider } from './Components/Definitions/Global/ComStateProvider25/ComStateProvider25';
+import { StateContext, StateProvider } from './Components/ComStateProvider25/ComStateProvider25';
 import { ParseRoute } from './Components/HybridEmbeddedRouter/RouteParser';
 import ClaimListPage from './Modules/MIMITRACK_25/CLAIMS_25/ClaimListPage25';
 import ReleaseListPage from './Modules/MIMITRACK_25/RELEASES_25/ReleaseListPage25';

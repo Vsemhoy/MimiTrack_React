@@ -1,5 +1,5 @@
 import React from "react";
-import { StateContext, StateProvider } from "../../../Components/Definitions/Global/ComStateProvider25/ComStateProvider25";
+import { StateContext, StateProvider } from "../../../Components/ComStateProvider25/ComStateProvider25";
 import MenuBox from "../../../Components/MimiTemplate/components/MENUBOX/MenuBox";
 import { useContext } from "react";
 import BreadCrumbBox from "../../../Components/MimiTemplate/components/BREADCRUMBS/BreadCrumbBox";

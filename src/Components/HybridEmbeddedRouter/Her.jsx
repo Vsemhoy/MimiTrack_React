@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ParseRoute } from './RouteParser';
 import { useContext, useEffect } from 'react';
-import { StateContext } from '../Definitions/Global/ComStateProvider25/ComStateProvider25';
+import { StateContext } from '../ComStateProvider25/ComStateProvider25';
 
 
 

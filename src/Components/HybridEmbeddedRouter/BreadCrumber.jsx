@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import { StateContext } from '../Definitions/Global/ComStateProvider25/ComStateProvider25';
+import { StateContext } from '../ComStateProvider25/ComStateProvider25';
 import Her from './Her';
 
 const BreadCrumber = (props) => {

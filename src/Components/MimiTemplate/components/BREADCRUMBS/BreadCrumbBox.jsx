@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { StateContext } from '../../../Definitions/Global/ComStateProvider25/ComStateProvider25';
+import { StateContext } from '../../../ComStateProvider25/ComStateProvider25';
 import BreadCrumber from '../../../HybridEmbeddedRouter/BreadCrumber';
 import './style/mibreads.css';
 

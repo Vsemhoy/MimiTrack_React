@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 
 import './style/menubox.css';
-import { StateContext } from '../../../Definitions/Global/ComStateProvider25/ComStateProvider25';
+import { StateContext } from '../../../ComStateProvider25/ComStateProvider25';
 import { Button } from 'antd';
 import Her from '../../../HybridEmbeddedRouter/Her';
 import { BarsOutlined, HomeOutlined } from '@ant-design/icons';
