@@ -10,11 +10,14 @@ const ReleasePage = (props) => {
 
     
     return (
-        <div className={"mi-ska-mw-1400"}>
-            <MenuBox />
-            <br/>
-        <BreadCrumbBox></BreadCrumbBox>
-            ReleasePage
+        <div className={'mi-page-wrapper'}>
+            <div className={"mi-ska-mw-1400"}>
+
+                <br/>
+            <BreadCrumbBox></BreadCrumbBox>
+                ReleasePage
+            </div>
+
         </div>
     )
 };

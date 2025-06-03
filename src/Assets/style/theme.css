@@ -24,7 +24,7 @@
     --drawer-bg-color: #ffffffa1;
     --drawer-gray-section-color: #00000017;
 
-    --icon-color-std: #767b82;
+    --icon-color-std: #969ea8;
     --icon-color-std-hover: #4a4c50;
 
     --column-divider-color: #00000038;
@@ -33,8 +33,52 @@
 
     --link-color: #1e88e5;
     --link-color-faded: #2d4153;
+
+    --accent-arstel-color: #ee741d;
+
+    --second-text-color: #4f4f4f;
+    --third-text-color: #8d8d8d;
 }
 
 .mi-bg-base {
     background-color: var(--block-background);
+}
+
+.markdown-body--light {
+  --color-canvas-default: #ffffff10;
+  --color-text-primary: #000000;
+  --color-fg-default: #4c535a;
+  --color-prettylights-syntax-constant: #611c1c;
+  --color-neutral-muted: #e7e5d8;
+  --color-canvas-subtle: #e1ebec;
+      --md-editor-box-shadow-color: #a2bac7;
+  /* и другие переменные для светлой темы */
+}
+.markdown-body--light.w-md-editor-fullscreen {
+    --color-canvas-default: #fff;
+}
+.wmde-markdown {
+    font-size: unset !important;
+}
+.markdown-body--light.w-md-editor {
+    background-color: white;
+}
+
+.comment-body-light {
+    color: #4c535a;
+        -webkit-text-size-adjust: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    font-size: unset !important;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+.mi-starred {
+    box-shadow: 0px 0px 1px var(--accent-arstel-color), 0px 2px 34px -9px var(--accent-arstel-color);
+}
+.markdown-body--light table {
+    background-color: white;
+}
+
+.mi-super-accent {
+    box-shadow: 0px 0px 11px var(--accent-arstel-color), 0px 14px 36px -9px var(--accent-arstel-color);
 }

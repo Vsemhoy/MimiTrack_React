@@ -10,11 +10,13 @@ const ExecutorListPage = (props) => {
 
     
     return (
-        <div className={"mi-ska-mw-1400"}>
-            <MenuBox />
-            <br/>
-        <BreadCrumbBox></BreadCrumbBox>
-            ExecutorListPage
+        <div className={'mi-page-wrapper'}>
+            <div className={"mi-ska-mw-1400"}>
+
+                <br/>
+            <BreadCrumbBox></BreadCrumbBox>
+                ExecutorListPage
+            </div>
         </div>
     )
 };

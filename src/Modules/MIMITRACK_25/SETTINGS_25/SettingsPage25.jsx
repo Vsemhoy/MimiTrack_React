@@ -10,11 +10,13 @@ const SettingsPage = (props) => {
 
     
     return (
-        <div className={"mi-ska-mw-1400"}>
-            <MenuBox />
-            <br/>
-        <BreadCrumbBox></BreadCrumbBox>
-            SettingsPage
+        <div className={'mi-page-wrapper'}>
+            <div className={"mi-ska-mw-1400"}>
+
+                <br/>
+            <BreadCrumbBox></BreadCrumbBox>
+                SettingsPage
+            </div>
         </div>
     )
 };

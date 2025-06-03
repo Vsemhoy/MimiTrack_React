@@ -34,7 +34,17 @@
 .mi-flex-space {
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
+}
+.mi-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mi-grid-2col {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 4%;
 }
 
 .mi-br-3 {
@@ -48,13 +58,43 @@
 }
 
 
-
+.mi-page-wrapper {
+    padding-top: 32px;
+}
 
 .mi-ska-mw-1400 {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
+.mi-ska-mw-1900 {
+    max-width: 1900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.mi-extend-space {
+    margin-bottom: 40vh;
+}
+.mi-extend-space-2 {
+    margin-bottom: 20vh;
+}
+
+.mi-over-auto {
+    overflow: auto;
+}
+
+
+.mi-filter-sidebar {
+    max-height: calc(100vh - 180px);
+    overflow: auto;
+}
+.ant-affix .mi-filter-sidebar {
+    max-height: 100vh;
+}
+
+
 @media screen and (max-width: 1400px) {
     .mi-ska-mw-1400 {
         padding-left: 12px;
@@ -68,9 +108,63 @@
     grid-template-columns: 320px auto;
     grid-gap: 12px;
 }
+.mi-layout-rightsidebar {
+    display: grid;
+    grid-template-columns: auto 320px;
+    grid-gap: 12px;
+}
+.mi-layout-leftsidebar-mini {
+    display: grid;
+    grid-template-columns: 240px auto;
+    grid-gap: 12px;
+}
+.mi-layout-rightsidebar-mini {
+    display: grid;
+    grid-template-columns: auto 240px;
+    grid-gap: 12px;
+}
+
+.mi-filter-row {
+    padding: 12px 0px 8px 0px;
+    /* border-bottom: 1px solid var(--column-divider-color); */
+}
+.mi-filter-label {
+    color: var(--second-text-color);
+    margin-bottom: 5px;
+}
 
 
 
+
+
+.mi-card-meta-info {
+    color: var(--icon-color-std);
+    padding: 3px 9px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.mi-card-meta-info:hover {
+    color: var(--icon-color-std-hover);
+    /* background-color: aliceblue; */
+}
+.mi-card-text {
+    color: rgb(62, 62, 62);
+}
+
+
+.mi-bagic {
+    background-color: rgb(86, 86, 86);
+    font-size: medium;
+    padding: 3px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(173, 173, 173);
+    color: white;
+    opacity: 0.7;
+}
+.mi-state-badge {
+    font-size: x-large;
+}
 
 
 

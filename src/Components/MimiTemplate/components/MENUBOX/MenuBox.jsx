@@ -1,59 +1,74 @@
 import React, { useContext, useEffect, useState } from 'react';
 
 import './style/menubox.css';
-import { StateContext } from '../../../ComStateProvider25/ComStateProvider25';
 import { Button } from 'antd';
-import Her from '../../../HybridEmbeddedRouter/Her';
-import { BarsOutlined, HomeOutlined } from '@ant-design/icons';
+
+import { BarsOutlined, CloseOutlined, HomeOutlined } from '@ant-design/icons';
+import { Link, NavLink } from 'react-router-dom';
 
 const MenuBox = (props) => {
-  const { state, setState } = useContext(StateContext);
-
-  const [currentLocation, setCurrentLocation] = useState('');
 
   const buttSize = 'large';
 
-  useEffect(()=>{
-    setCurrentLocation(state.location);
-  },[state.location])
-
   return (
-    <div className={'mi-container mi-bg-base mi-block-menu mi-br-9'}>
+    <div className={'mi-container mi-bg-base mi-block-menu mi-br-3'}>
       <div className={'mi-flex'}>
-        <Her href={'home'}>
-          <div className={'mi-pa-9'}>
-            <HomeOutlined />
+       <NavLink to={'/home'}
+       className={({ isActive }) => isActive ? 'mi-active' : ''}
+       >
+          <div className={''}>
+          <Button type="text" size={buttSize}>
+            <CloseOutlined />
+
+          </Button>
           </div>
-        </Her>
+        </NavLink>
       </div>
       <div className={'mi-flex'}>
-        <Her href={'releases'} location={'releases'}>
-          <Button type="link" size={buttSize}>
+        <NavLink to={'/releases'}
+        className={({ isActive }) => isActive ? 'mi-active' : ''}
+        >
+          <Button type="text" size={buttSize}>
             Релизы
           </Button>
-        </Her>
-        <Her href={'claims'} location={'claims'}>
-          <Button type="link" size={buttSize}>
+        </NavLink>
+        <NavLink to={'/claims'} 
+        className={({ isActive }) => isActive ? 'mi-active' : ''}
+        >
+          <Button type="text" size={buttSize}>
             Заявки
           </Button>
-        </Her>
-        <Her href={'questions'}  location={'questions'}>
-          <Button type="link" size={buttSize}>
+        </NavLink>
+        <NavLink to={'/questions'} 
+        className={({ isActive }) => isActive ? 'mi-active' : ''}
+        >
+          <Button type="text" size={buttSize}>
             Вопросы
           </Button>
-        </Her>
-        <Her href={'executor'} location={'executor'}>
-          <Button type="link" size={buttSize}>
+        </NavLink>
+        <NavLink to={'/executor'} 
+        className={({ isActive }) => isActive ? 'mi-active' : ''}
+        >
+          <Button type="text" size={buttSize}>
             Цех
           </Button>
-        </Her>
+        </NavLink>
+        <NavLink to={'/taskup'} 
+        className={({ isActive }) => isActive ? 'mi-active' : ''}
+        >
+          <Button type="text" size={buttSize}>
+            Task Up!
+          </Button>
+        </NavLink>
       </div>
       <div className={'mi-flex'}>
-        <Her href={'settings'} location={'settings'}>
-          <Button type="link" size={buttSize}>
+        <NavLink to={'/settings'}
+        className={({ isActive }) => isActive ? 'mi-active' : ''}
+        >
+          <Button type="text" size={buttSize}>
             Настройки
           </Button>
-        </Her>
+        </NavLink>
       </div>
     </div>
   );
