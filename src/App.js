@@ -29,6 +29,7 @@ import './Assets/style/theme.css';
 import './Assets/style/layout.css';
 import MenuBox from './Components/MimiTemplate/components/MENUBOX/MenuBox';
 import TaskListPage25 from './Modules/MIMITRACK_25/TASKAPP/TASKLIST_25/TaskListPage25';
+import Statusbar14 from './Components/MimiTemplate/commoncom/STATUSBAR/Statusbar14';
 
 function App() {
   // const { state, setState } = useContext(StateContext);
@@ -110,6 +111,8 @@ function App() {
             <Route path="/taskup" element={<TaskListPage25 />} />
             {/* <Route path="*" element={<NoPage />} /> */}
         </Routes>
+
+        <Statusbar14 />
       
     </div>
   );
