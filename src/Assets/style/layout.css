@@ -31,6 +31,10 @@
 .mi-flex {
     display: flex;
 }
+.mi-flex-gap {
+    display: flex;
+    grid-gap: 9px;
+}
 .mi-flex-space {
     display: flex;
     justify-content: space-between;
@@ -92,6 +96,13 @@
 }
 .ant-affix .mi-filter-sidebar {
     max-height: 100vh;
+}
+/* .ant-dropdown-menu-item {
+    width: 100%;
+} */
+
+.mi-w-100 {
+    width: 100%;
 }
 
 
@@ -203,4 +214,54 @@
 
 .mi-leftalign {
     text-align: left;
+}
+
+
+
+
+.mi-window {
+    min-height: 300px;
+    box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.188);
+    backdrop-filter: blur(16px);
+    background-color: rgba(255, 255, 255, 0.375);
+    display: grid;
+    grid-template-rows: 30px auto;
+}
+.mi-window-body {
+    background-color: white;
+    min-height: 300px;
+}
+.mi-window-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mi-window-control > div {
+    height: 100%;
+    color: white;
+}
+.mi-window-control-button {
+    font-size: large;
+    color: white;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(101, 101, 101, 0.26);
+    height: 100%;
+    transition: all 0.3s;
+}
+.mi-window-control-button:hover {
+    background-color: rgba(101, 101, 101, 0.426);
+}
+.mi-window-control-button:active {
+    background-color: rgba(0, 0, 0, 0.426);
+}
+.mi-window-control-title {
+    color: white;
+    padding: 6px;
+    text-shadow: 1px 1px 12px black;
+}
+
+.App {
+    min-height: 100vh;
 }

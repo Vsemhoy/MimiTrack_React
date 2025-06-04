@@ -62,7 +62,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="App mi-background-a">
       <div>
         <MenuBox />
       </div>
