@@ -1,0 +1,11 @@
+.input-contenteditable {
+    white-space: normal; /* чтобы текст переносился по словам */
+    word-break: break-word; /* чтобы слова переносились при необходимости */
+    overflow-wrap: break-word;
+    padding: 6px 12px 2px 0px;
+
+}
+
+.input-ced-editmode {
+    border-bottom: 1px solid #526e87;
+}
