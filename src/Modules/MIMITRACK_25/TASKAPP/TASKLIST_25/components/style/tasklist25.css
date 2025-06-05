@@ -75,11 +75,14 @@
 .mi-flat-task-wrapper {
     /* background-color: rgba(0, 0, 0, 0.042); */
     padding-top: 6px;
-    
+    border-left: 2px solid rgba(250, 128, 114, 0);
+    transition: all 0.3s;
+    border-bottom-left-radius: 9px;
     /* padding-left: 6px; */
 }
 .mi-flat-task-wrapper:hover {
-    background-color: rgba(0, 0, 0, 0.042);
+    /* background-color: rgba(0, 0, 0, 0.042); */
+    border-left: 2px solid rgba(0, 110, 255, 0.258);
 }
 .mi-flat-task-wrapper:not(:last-child){
     padding-bottom: 1px;
@@ -92,4 +95,11 @@
 }
 .mi-flat-task:hover {
     background-color: #e6f4ff;
+}
+.mi-flat-task-stack-combo {
+    background-color: gainsboro;
+    padding: 6px;
+    padding-bottom: 40vh;
+}
+.mi-flat-task-stack-combo > div:last-child {
 }
