@@ -1,4 +1,4 @@
-import { BarsOutlined, EnterOutlined } from '@ant-design/icons';
+import { BarsOutlined, DeleteOutlined, DownCircleOutlined, DownSquareOutlined, EnterOutlined, PlusCircleOutlined, PlusSquareOutlined } from '@ant-design/icons';
 import { Button, Dropdown, Input } from 'antd';
 import React, { useEffect, useState } from 'react';
 import InputContentEditable from '../../../../../../Components/MimiTemplate/components/CONTENTEDITABLE/InputContentEditable';
@@ -6,12 +6,23 @@ import InputContentEditable from '../../../../../../Components/MimiTemplate/comp
 
 const menuItems = [
 {
-    key: '3',
+    key: '5',
+    label: (
+      <div>
+        Удалить
+      </div>
+    ),
+    icon: <DeleteOutlined />,
+    danger: true
+  },
+    {
+    key: '4',
     label: (
       <div>
         Добавить секцию
       </div>
     ),
+    icon: <PlusSquareOutlined />
   },
   {
     key: '1',
@@ -20,6 +31,7 @@ const menuItems = [
         Добавить подсекцию
       </div>
     ),
+    icon: <DownSquareOutlined />
   },
   {
     key: '2',
@@ -28,6 +40,7 @@ const menuItems = [
         Добавить задачу
       </div>
     ),
+    icon: <PlusCircleOutlined />
   },
   {
     key: '3',
@@ -36,6 +49,7 @@ const menuItems = [
         Добавить подзадачу
       </div>
     ),
+    icon: <DownCircleOutlined />
   },
 ];
 
