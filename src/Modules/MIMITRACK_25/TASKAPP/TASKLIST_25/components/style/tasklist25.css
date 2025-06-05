@@ -77,10 +77,13 @@
     padding-top: 6px;
     border-left: 2px solid rgba(250, 128, 114, 0);
     transition: all 0.3s;
-    border-bottom-left-radius: 9px;
     /* padding-left: 6px; */
 }
-.mi-flat-task-wrapper:hover {
+.mi-flat-task-wrapper:last-child {
+    
+    border-bottom-left-radius: 9px;
+}
+.mi-flat-task-wrapper:hover > .mi-flat-task-childrens > .mi-flat-task-wrapper {
     /* background-color: rgba(0, 0, 0, 0.042); */
     border-left: 2px solid rgba(0, 110, 255, 0.258);
 }
